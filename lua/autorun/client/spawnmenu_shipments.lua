@@ -1,25 +1,25 @@
 --[[------------------------------------------------------------
-	Codigo para copair y pegar toda la wea de darkrp aqui
+    Codigo para copair y pegar toda la wea de darkrp aqui
 ------------------------------------------------------------]]--
 
 local DarkRP = DarkRP or {}
 
 function DarkRP.createShipment(name, tbl)
-	list.Add("DarkRPShipments", {
-		["name"]		= name,
-		["entity"]		= tbl["ent"],
-		["cmd"]			= tbl["cmd"],
-		["model"]		= tbl["model"],
+    list.Add("DarkRPShipments", {
+        ["name"]        = name,
+        ["entity"]      = tbl["ent"],
+        ["cmd"]         = tbl["cmd"],
+        ["model"]       = tbl["model"],
         ["amount"]      = tbl["amount"],
-		["price"]		= tbl["price"],
-		["category"]	= tbl["category"],
+        ["price"]       = tbl["price"],
+        ["category"]    = tbl["category"],
         ["color"]       = tbl["color"] or Color(255, 255, 255),
         ["fov"]         = tbl["category"] == "Pistols" and 30 or 50
-	})
+    })
 end
 
 --[[------------------------------------------------------------
-	Editar debajo de este comentario
+    Editar debajo de este comentario
 ------------------------------------------------------------]]--
 
 --[[--------------------
